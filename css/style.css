@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.image{
+  position:fixed;
+  display:none;
+  left:45vw;
+  width:60vw;
+  height:30vw;
+  opacity:0%;
+  animation:ani 2.4s 1 linear;
+}
+#i1{
+  top:6vw;
+}
+#i2{
+  left:65vw;
+  top:6.7vw;
+  width:30vw;
+}
+#i3{
+  left:80vw;
+  top:8.9vw;
+  width:40vw;
+}
+#i4{
+  left:55vw;
+  top:11vw;
+  width:40vw;
+}
+#i5{
+  left:90vw;
+  top:13.2vw;
+  width:25vw;
+}
+#image1{
+  position:fixed;
+  display:none;
+  left:45vw;
+  top:5vw;
+  width:00vw;
+  height:50vw;
+  animation:ani1 1.2s 1 linear;
+  background-color:black;
+}
+@keyframes ani{
+  0%{opacity:100%}
+  35%{opacity:100%}
+  100%{opacity:0%}
+}
+@keyframes ani1{
+  0%{width:60vw;}
+  10%{width:60vw;}
+  /* 10%{width:40vw;}
+  50%{width:25vw;} */
+  100%{width:0vw;}
+}
+
+#name{
+  color:red;
+  font-size:8vw;
+  position:fixed;
+  left:70vw;
+  top:15vw;
+  display:none;
+  opacity:75%;
+  animation:ani2 2.4s 1 linear;
+}
+@keyframes ani2{
+  0%{opacity:0%}
+  40%{opacity:0%}
+  100%{opacity:75%}
+}
